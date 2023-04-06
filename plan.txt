@@ -1,0 +1,37 @@
+fichiers :
+
+    - index.php (contient l'html)
+
+    - hero.php/controller (upload image)
+
+    - cartes.php/controller (upload les images avec leur titre et sous titre)
+
+    - video.php/controller(uplaod video description et titre)
+
+    - caroussel.php/controller ( upload les images avec leur titre et sous titre )
+
+    - form.php/controller (gérer le formulaire de contact et la sécuriter du password)
+
+    - message.php/controller (gérer l'arriver des messages , l'affichage et la redirection)
+
+    - dbconnection.php  (connexion a la base de donnée)
+
+    - cms.php (site multilingue : titre sous titre etc)
+
+    - AuthController.php (gérer la connexion au backoffice accéder au dashboard)
+
+    - potentiel fichiers qui contient les routes (routes.php)
+
+
+
+style :
+
+    assets :
+
+        css 
+
+        img
+
+        js
+    
+boostrap pour le potentiel dashboard
