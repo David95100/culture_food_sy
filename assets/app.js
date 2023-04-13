@@ -13,6 +13,8 @@ import './bootstrap';
 
 // custom scss
 import './css/style.scss';
+import './css/navBar.scss';
 
 //customs js
 import './js/customs';
+import './js/navBar.js';
