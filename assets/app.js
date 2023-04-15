@@ -16,5 +16,6 @@ import './css/style.scss';
 import './css/navBar.scss';
 
 //customs js
-import './js/customs';
+
+import './js/utils/customs';
 import './js/navBar.js';

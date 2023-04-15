@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Culture Food{% endblock %}</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block stylesheets %}
-        {{ encore_entry_link_tags('app') }}
-    {% endblock %}
-
-   
-</head>
 {% block header %}
     <header>
         <nav id="containernav">
             <a href="#top">
-                <img class="imglogo" src="{{ asset('images/culture_food.webp') }}" alt="logo de la chaine youtube">
+                <img class="imglogo" src="{{ asset('build/images/culture_food.webp') }}" alt="logo de la chaine youtube">
             </a>
             <ul id="burger-content">
                 <li><a href="#recette">Plats historiques</a></li>
@@ -28,7 +15,5 @@
         </nav>
     </header>
 {% endblock %}
-<body>
-<scrip src="{{ asset('js/navBar.js') }}" ></scrip>
-</body>
-</html>
+
+
