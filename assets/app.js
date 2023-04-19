@@ -14,8 +14,15 @@ import './bootstrap';
 // custom scss
 import './css/style.scss';
 import './css/navBar.scss';
+import './css/carousselHeader.scss';
 
 //customs js
 
 import './js/utils/customs';
 import './js/navBar.js';
+import './js/carousselHeader';
+
+//custom fontawesome
+import './fontawesome/js/fontawesome.js';
+import './fontawesome/js/solid.js';
+
