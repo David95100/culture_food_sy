@@ -15,14 +15,14 @@ import './bootstrap';
 import './css/style.scss';
 import './css/navBar.scss';
 import './css/carousselHeader.scss';
+import './css/carteRecette.scss';
 
 //customs js
-
 import './js/utils/customs';
 import './js/navBar.js';
 import './js/carousselHeader';
+import './js/carteRecette.js';
 
 //custom fontawesome
-import './fontawesome/js/fontawesome.js';
-import './fontawesome/js/solid.js';
-
+import '@fortawesome/fontawesome-free/js/all.min';
+import '@fortawesome/fontawesome-free/scss/fontawesome.scss';

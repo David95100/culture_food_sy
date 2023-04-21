@@ -1,14 +1,16 @@
+@import "variable";
+
 #containernav{
   height: 70px;
   width: 100%;
-  background: rgba(245,245,245,0.707);
+  background: $ligthwhite;
   position: fixed;
-  z-index: 1000;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   font-family: Poppins;
+  z-index: 1;
   .imglogo{
     height: 50px;
     width: 100px;
@@ -25,7 +27,7 @@
       width: fit-content;
       a {
         text-decoration: none;
-        color: black;
+        color: $black;
         &:after {
           bottom: -8px;
           content: "";
@@ -33,7 +35,7 @@
           height: 2px;
           left: 50%;
           position: absolute;
-          background: black;
+          background: $black;
           transition: width .3s ease 0s, left .3s ease 0s;
           width: 0;
         }
@@ -54,7 +56,6 @@
     border: none;
     background: none;
     display: none;
-    z-index: 7;
     &:hover {
       cursor: pointer;
     }
@@ -65,9 +66,8 @@
     right: 0;
     width: 0vw;
     height: 100vh;
-    background: white;
-    z-index: 9;
-    color: black;
+    background: $white;
+    color: $black;
   }
   #burger-overlay {
     position: fixed;
@@ -77,11 +77,9 @@
     height: 100vh;
     background: #00000090;
     display: none;
-    z-index: 8;
   }
 }
 #containernav ul.menu-responsive-ul {
-  z-index: 10;
   display: block;
   position: relative;
   top: 30%;

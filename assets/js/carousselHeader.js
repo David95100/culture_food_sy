@@ -1,12 +1,8 @@
 let img_slider = document.getElementsByClassName('img_slider');
-
-let etape = 0
-
 let nbr_img = img_slider.length;
-
-let precedent = document.querySelector('.precedent')
-let suivant = document.querySelector('.suivant')
-
+let precedent = document.querySelector('.precedent');
+let suivant = document.querySelector('.suivant');
+let etape = 0;
 function enleverActivateImages(){
     for(let i = 0 ; i < nbr_img ; i++){
         img_slider[i].classList.remove('active')

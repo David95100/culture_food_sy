@@ -1,0 +1,253 @@
+@import "variable";
+
+.h1{
+  text-align: center;
+  margin: 20px;
+  font-family:"heiti sc";
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 5px 0 110px;
+  .card {
+    width: 250px;
+    height: 348px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+    position: relative;
+    .card-inner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      .card-front {
+        background-color:$orange;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        color: $white;
+        font-family: "Poppins";
+        img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+        h3 {
+          font-size: 1.2rem;
+          margin: 24px 0 0;
+        }
+        p {
+          font-size: 0.8rem;
+          margin: 24px 0 0;
+          line-height: 1.2;
+        }
+      }
+      .card-front {
+        display: flex;
+      }
+      .card-back {
+        transform: rotateY(180deg);
+        background-color:$lightorange ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: $black;
+        font-family: "Poppins";
+        font-size: 12px;
+        h4{
+          padding: 10px;
+        }
+        p{
+          margin: 10px;
+        }
+        a{
+          margin: 10px;
+        }
+        .recette-link {
+          display: block;
+          margin-bottom: 20px;
+        }
+        .recette-overlay {
+          display: none;
+          position: fixed;
+          width: 100%;
+          height: 100%;
+        }
+        .recette-link{
+          // text-decoration: none;
+          color: $black;
+        }
+        h6{
+          font-size: 14px;
+        }
+        .recette-content {
+          display: block;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 80%;
+          height: 80%;
+          max-width: 800px;
+          max-height: 600px;
+          overflow-y: auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          font-size: 12px;
+          li{
+            align-items: center;
+            text-align: center;
+            list-style: none;
+          }
+        }
+      }
+    }
+    &:hover{
+      .card-inner{
+        transform: rotateY(180deg);
+        padding-right: 40px;
+        transition: all 0.5s linear;
+      }
+    }
+  }
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+  @media screen and (max-width: 1245px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      width: 85%;
+      margin: 0 5px 0 8%;
+      .card {
+        width: 90%;
+        height: 348px;
+        margin-bottom: 20px;
+        perspective: 1000px;
+        position: relative;
+        .card-front {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 5px;
+          color: $white;
+          font-family: "Poppins";
+          img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+          h3 {
+            font-size: 2em;
+            margin: 24px 0 0;
+          }
+          p {
+            font-size: 1em;
+            margin: 24px 0 0;
+            line-height: 1.2;
+          }
+        }
+        .imgBack{
+          width: 250px;
+          height: 250px;
+          display: flex;
+          margin-top: 10%;
+        }
+      }
+    }
+    @media screen and (max-width: 980px) {
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 85%;
+        margin: 0 5px 0 7%;
+        .card {
+          width: 90%;
+          height: 348px;
+          margin-bottom: 20px;
+          perspective: 1000px;
+          position: relative;
+          .card-front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            color: $white;
+            font-family: "Poppins";
+            img {
+              width: 100%;
+              height: 180px;
+              object-fit: cover;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+            }
+            h3 {
+              font-size: 2em;
+              margin: 24px 0 0;
+            }
+            p {
+              font-size: 1em;
+              margin: 24px 0 0;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 560px) {
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        width: 85%;
+        margin: 0 5px 0 8%;
+        .card {
+          width: 90%;
+          height: 348px;
+          margin-bottom: 20px;
+          perspective: 1000px;
+          position: relative;
+          .card-front {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            color: $white;
+            font-family: "Poppins";
+            img {
+              width: 100%;
+              height: 180px;
+              object-fit: cover;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+            }
+            h3 {
+              font-size: 2em;
+              margin: 24px 0 0;
+            }
+            p {
+              font-size: 1em;
+              margin: 24px 0 0;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+    }
+  }

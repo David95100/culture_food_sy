@@ -10,19 +10,19 @@
         {% endblock %}
     </head>
     <header>
-        {% block header %}
-            {% include 'components/navBar.html.twig' %}
-            {% include 'components/carousselHeader.html.twig' %}
-        {% endblock %}
+        {% include 'components/navBar.html.twig' %}
+        {% include 'components/carousselHeader.html.twig' %}
     </header>
 
     <body>
-        {% block body %}
+        {% include 'components/carteRecette.html.twig' %}
 
+        {% block body %}
         {% endblock %}
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+
     </body>
 </html> 

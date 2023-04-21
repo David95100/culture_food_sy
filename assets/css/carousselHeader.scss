@@ -1,3 +1,5 @@
+@import "variable";
+
 .carousselHeader {
   display: flex;
   justify-content: center;
@@ -13,10 +15,10 @@
       text-align: center;
       align-items: center;
       margin: 13vh;
-      z-index: 10;
-      color: white;
+      color: $white;
       font-size: 3em;
       font-family: 'Heiti SC';
+      z-index: 1;
     }
     img{
       object-fit: cover;
@@ -32,17 +34,17 @@
       opacity: 1;
     }
     .suivant{
-      color: rgb(146, 144, 144);
+      color: $ligthwhite;
       height: 10px;
       right: 5px;
     }
     .precedent{
-      color: rgb(146, 144, 144);
+      color:$ligthwhite;
       height: 10px;
       left: 5px;
     }
     .suivant, .precedent{
-      color: white;
+      color: $white;
       font-size: 3rem;
       position: absolute;
       top: 45%;
