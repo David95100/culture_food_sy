@@ -17,7 +17,7 @@ import './css/navBar.scss';
 import './css/carousselHeader.scss';
 import './css/carteRecette.scss';
 import './css/video.scss';
-
+import './css/footer.scss';
 //customs js
 import './js/utils/customs';
 import './js/navBar.js';

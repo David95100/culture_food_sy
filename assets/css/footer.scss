@@ -1,0 +1,30 @@
+@import "variable";
+
+#containerfooter {
+  height: 12vh;
+  width: 100%;
+  background: $lightorange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .legal-link {
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: $black;
+    font-size: 20px;
+  }
+  .reseaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      height: 50px;
+      width: auto;
+      margin: 0 10px;
+    }
+  }
+}
