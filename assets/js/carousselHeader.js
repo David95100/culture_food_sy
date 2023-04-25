@@ -3,19 +3,22 @@ let nbr_img = img_slider.length;
 let precedent = document.querySelector('.precedent');
 let suivant = document.querySelector('.suivant');
 let etape = 0;
+
 function enleverActivateImages(){
     for(let i = 0 ; i < nbr_img ; i++){
         img_slider[i].classList.remove('active')
     }
 }
+
 suivant.addEventListener('click', function(){
     etape++;
     if(etape >= nbr_img){
         etape = 0
     }
     enleverActivateImages()
-    img_slider[etape].classList.add('active');
-})
+    console.log("Image slider : ", img_slider[etape].classList.add('active'));
+});
+
 precedent.addEventListener('click', function(){
     etape--;
     if(etape < 0){
@@ -23,7 +26,8 @@ precedent.addEventListener('click', function(){
     }
     enleverActivateImages()
     img_slider[etape].classList.add('active');
-})
+});
+
 setInterval(function() {
     etape++;
     if(etape >= nbr_img){
