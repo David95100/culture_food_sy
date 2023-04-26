@@ -17,12 +17,14 @@ import './css/navBar.scss';
 import './css/carousselHeader.scss';
 import './css/carteRecette.scss';
 import './css/video.scss';
+import './css/equipe.scss';
 import './css/footer.scss';
 //customs js
 import './js/utils/customs';
 import './js/navBar.js';
 import './js/carousselHeader';
 import './js/carteRecette.js';
+
 
 //custom fontawesome
 import '@fortawesome/fontawesome-free/js/all.min';

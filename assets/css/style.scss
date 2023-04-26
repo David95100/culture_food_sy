@@ -10,6 +10,25 @@ body {
   font-family: 'Poppins';
   #overlay {
   z-index: 2;
+    #recette{
+      display: none;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      height: 80%;
+      max-width: 800px;
+      max-height: 600px;
+      overflow-y: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      font-size: 12px;
+      h6 {
+        font-size: 14px;
+      }
+    }
     &.open {
       position: fixed;
       width: 100%;
